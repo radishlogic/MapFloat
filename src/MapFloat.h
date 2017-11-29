@@ -10,6 +10,6 @@
 #ifndef MapFloat_h
 #define MapFloat_h
 
-float mapFloat(float _input, float _inputMin, float _inputMax, float _outputMin, float _outputMax);
+float mapFloat(float value, float fromLow, float fromHigh, float toLow, float toHigh);
 
 #endif

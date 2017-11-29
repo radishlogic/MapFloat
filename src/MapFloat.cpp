@@ -9,6 +9,6 @@
 
 #include "MapFloat.h"
 
-float mapFloat(float _input, float _inputMin, float _inputMax, float _outputMin, float _outputMax) {
-  return (_input - _inputMin) * (_outputMax - _outputMin) / (_inputMax - _inputMin) + _outputMin; 
+float mapFloat(float value, float fromLow, float fromHigh, float toLow, float toHigh) {
+  return (value - fromLow) * (toHigh - toLow) / (fromHigh - fromLow) + toLow; 
 }
